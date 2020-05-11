@@ -1,0 +1,5 @@
+#!/bin/bash
+mdadm --create --verbose /dev/md0 --level=5 --raid-devices=4 /dev/sdb /dev/sdc /dev/sdd /dev/sde --spare-devices=1 /dev/sdf <<EOF
+yes
+EOF
+
